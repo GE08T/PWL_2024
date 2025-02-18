@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Selamat Datang';
+});
+
+
+Route::get('/hello', function () {
+    return 'Hello World';
+});
+
+Route::get('/world', function () {
+    return 'World';
+});
+
+Route::get('/about', function () {
+    return 'NIM : 2341720054 <br> Nama : Galung Erlyan Tama';
 });
