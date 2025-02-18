@@ -29,3 +29,15 @@ Route::get('/world', function () {
 Route::get('/about', function () {
     return 'NIM : 2341720054 <br> Nama : Galung Erlyan Tama';
 });
+
+Route::get('/user/{name}', function ($name) {
+    return 'Nama Saya '.$name;
+});
+
+Route::get('/posts/{post}/comments/{comment}', function ($postID, $commentID) {
+    return 'Pos ke-'.$postID." Komentar ke-: ".$commentID;
+});
+
+Route::get('/articles/{id}', function ($id) {
+    return 'Halaman Artikel dengan ID : '.$id;
+});
