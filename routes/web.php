@@ -44,3 +44,6 @@ Route::resource('photos', PhotoController::class)
 ]); 
 
 Route::get('/greeting', [WelcomeController::class, 'greeting']); 
+
+Route::view('/welcome', 'welcome');
+Route::view('/welcome', 'welcome', ['name' => 'Galung Erlyan Tama']);
